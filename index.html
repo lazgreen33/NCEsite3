@@ -39,8 +39,10 @@
                 <div class="flex items-center gap-3">
                     <a href="#" class="flex items-center gap-3 group">
                         <!-- Rectangular Logo Placeholder Box -->
-                        <div class="w-64 h-20 bg-slate-100 border border-dashed border-slate-300 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
-                            <img src="NewChargeSign.JPEG" alt="alternate text">
+                        <!--<div class="w-64 h-18 bg-slate-100 border border-line border-slate-300 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
+                            --->
+						<div class="w-40 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
+							<img src="NewChargeSign.JPEG" alt="alternate text" style="border-radius: 15px">
                         </div>
                     </a>
                 </div>
@@ -51,14 +53,18 @@
                         Home
                     </a>
 
-                    <a href="#" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                    <a href="about.html" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
                         About
                     </a>
+					
+					<a href="donations.html" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+						Donations & Recycling
+					</a>
 
                     <!-- Inventory Dropdown -->
                     <div class="relative group" id="inventory-dropdown">
                         <button id="inventory-btn" aria-expanded="false" class="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 focus:outline-none py-2 transition-colors">
-                            <span>Inventory</span>
+                            <a href="inventory.html">Inventory</a>
                             <svg class="w-4 h-4 text-slate-400 group-hover:text-slate-700 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
@@ -69,26 +75,29 @@
                             <div class="px-3 py-1.5 text-[10px] font-semibold tracking-wider text-slate-400 uppercase">
                                 Categories
                             </div>
-                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                           <a href="desktops.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
                                 Desktops
                             </a>
-                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                            <a href="laptops.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
                                 Laptops
                             </a>
-                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
-                                Monitors
+                            <a href="monitors.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Monitors & Displays
                             </a>
-                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
-                                TVs & Displays
+                            <a href="tvs.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                TVs 
                             </a>
-                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                            <a href="cables.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
                                 Cables & Adapters
                             </a>
-                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                            <a href="accessories.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
                                 Accessories
                             </a>
                         </div>
                     </div>
+					
+					
+					
                 </nav>
 
                 <!-- Action Button -->
@@ -113,19 +122,21 @@
         <!-- Mobile Navigation Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-b border-slate-100 bg-white px-4 pt-2 pb-6 space-y-3">
             <a href="#" class="block text-base font-semibold text-slate-900 py-1">Home</a>
-            <a href="#" class="block text-base font-medium text-slate-600 hover:text-slate-900 py-1">About</a>
-            
+            <a href="about.html" class="block text-base font-medium text-slate-600 hover:text-slate-900 py-1">About</a>
+            <a href="donations.html" class="block text-base font-medium text-slate-600 hover:text-slate-900 py-1">Donations & Recycling</a>
             <div class="space-y-1">
                 <span class="block text-xs font-semibold tracking-wider text-slate-400 uppercase py-1">Inventory</span>
                 <div class="pl-3 space-y-1 border-l-2 border-slate-100">
-                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Desktops</a>
-                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Laptops</a>
-                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Monitors</a>
-                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">TVs & Displays</a>
-                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Cables & Adapters</a>
-                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Accessories</a>
+                    <a href="desktops.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Desktops</a>
+                    <a href="laptops.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Laptops</a>
+                    <a href="monitors.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Monitors & Displays</a>
+                    <a href="tvs.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">TVs</a>
+                    <a href="cables.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Cables & Adapters</a>
+                    <a href="accessories.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Accessories</a>
                 </div>
             </div>
+			
+			
 
             <div class="pt-2">
                 <a href="#" class="block w-full text-center px-5 py-2.5 bg-slate-900 text-white font-medium rounded-lg">Contact Us</a>
@@ -140,46 +151,45 @@
                 
                 <!-- Left Column: Description & CTAs -->
                 <div class="lg:col-span-6 space-y-8 text-left">
-                    
-                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-slate-100 border border-slate-200 rounded-full">
-                        <span class="w-2 h-2 rounded-full bg-slate-900"></span>
-                        <span class="text-xs font-medium text-slate-700">Next-Gen Technology Supply</span>
-                    </div>
 
                     <div class="space-y-4">
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.15]">
-                            Powering your enterprise with modern tech.
+                            Old Electronics with a New Charge
                         </h1>
                         <p class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl">
-                            New Charge Electronics supplies high-performance desktops, laptops, displays, and essential connectivity hardware tailored for businesses and individuals seeking reliable power.
+                            New Charge Electronics refurbishes desktops, laptops, monitors, and more to help bring affordable electronics to our community. 
                         </p>
+						<p class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl">
+							We thrive off of donations and partnerships with local recycling and transfer centers to bring old and used tech back to life. 
+						</p>
                     </div>
 
                     <!-- Call To Action & Details -->
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
                         <a href="#" class="px-7 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-medium text-center rounded-xl transition-all shadow-md hover:shadow-lg">
-                            Explore Catalog
+                            Explore Inventory
                         </a>
-                        <a href="#" class="px-7 py-3.5 bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-center border border-slate-200 rounded-xl transition-all">
-                            Learn More
+                        <a href="about.html" class="px-7 py-3.5 bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-center border border-slate-200 rounded-xl transition-all">
+                            About Us
                         </a>
                     </div>
 
-                    <!-- Subtle Value Props -->
+                    <!-- Subtle Value Props 
                     <div class="pt-6 border-t border-slate-100 grid grid-cols-3 gap-4">
                         <div>
-                            <div class="font-bold text-slate-900 text-lg">100%</div>
+                            <div class="font-bold text-slate-900 text-lg">Tested</div>
                             <div class="text-xs text-slate-500">Quality Tested</div>
                         </div>
                         <div>
-                            <div class="font-bold text-slate-900 text-lg">Fast</div>
+                            <div class="font-bold text-slate-900 text-lg"></div>
                             <div class="text-xs text-slate-500">Global Shipping</div>
                         </div>
                         <div>
-                            <div class="font-bold text-slate-900 text-lg">24/7</div>
-                            <div class="text-xs text-slate-500">Expert Support</div>
+                            <div class="font-bold text-slate-900 text-lg">Donations</div>
+                            <div class="text-xs text-slate-500">Weedays 9am to 5pm</div>
                         </div>
                     </div>
+					--->
 
                 </div>
 

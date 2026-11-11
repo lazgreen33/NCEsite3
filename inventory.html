@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Charge Electronics</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#64748b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-slate-900 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-slate-900 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand / Logo Placeholder -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center gap-3 group">
+                        <!-- Rectangular Logo Placeholder Box -->
+                        <!--<div class="w-64 h-18 bg-slate-100 border border-line border-slate-300 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
+                            --->
+						<div class="w-40 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
+							<img src="NewChargeSign.JPEG" alt="alternate text" style="border-radius: 15px">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                        Home
+                    </a>
+
+                    <a href="about.html" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                        About
+                    </a>
+					
+					<a href="donations.html" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+						Donations & Recycling
+					</a>
+
+                    <!-- Inventory Dropdown -->
+                    <div class="relative group" id="inventory-dropdown">
+                        <button id="inventory-btn" aria-expanded="false" class="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 focus:outline-none py-2 transition-colors">
+                            <a href ="#" class="text-sm font-semibold text-slate-900 transition-colors">Inventory</a>
+                            <svg class="w-4 h-4 text-slate-400 group-hover:text-slate-700 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div class="absolute right-0 md:left-0 mt-2 w-56 rounded-xl bg-white shadow-xl border border-slate-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-1">
+                            <div class="px-3 py-1.5 text-[10px] font-semibold tracking-wider text-slate-400 uppercase">
+                                Categories
+                            </div>
+                            <a href="desktops.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Desktops
+                            </a>
+                            <a href="laptops.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Laptops
+                            </a>
+                            <a href="monitors.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Monitors
+                            </a>
+                            <a href="display.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                TVs & Displays
+                            </a>
+                            <a href="cables.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Cables & Adapters
+                            </a>
+                            <a href="accessories.html" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Accessories
+                            </a>
+                        </div>
+                    </div>
+					
+					
+					
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="#" class="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium rounded-full transition-all shadow-sm hover:shadow">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-100 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block text-base font-medium text-slate-600 hover:text-slate-900 py-1">Home</a>
+            <a href="about.html" class="block text-base font-semibold text-slate-900 py-1">About</a>
+            <a href="donations.html" class="block text-base font-medium text-slate-600 hover:text-slate-900 py-1">Donations & Recycling</a>
+            <div class="space-y-1">
+                <a href="#" class="block text-xs font-semibold tracking-wider text-slate-400 uppercase py-1">Inventory</a>
+                <div class="pl-3 space-y-1 border-l-2 border-slate-100">
+                    <a href="desktops.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Desktops</a>
+                    <a href="laptops.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Laptops</a>
+                    <a href="monitors.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Monitors</a>
+                    <a href="displays.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">TVs & Displays</a>
+                    <a href="cables.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Cables & Adapters</a>
+                    <a href="accessories.html" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Accessories</a>
+                </div>
+            </div>
+			
+			
+
+            <div class="pt-2">
+                <a href="#" class="block w-full text-center px-5 py-2.5 bg-slate-900 text-white font-medium rounded-lg">Contact Us</a>
+            </div>
+        </div>
+    </header>
+	
+	<main class="flex-grow flex items-center py-12 lg:py-24">
+	
+	</main>
