@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Charge Electronics</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#64748b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-slate-900 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-slate-900 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand / Logo Placeholder -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center gap-3 group">
+                        <!-- Rectangular Logo Placeholder Box -->
+                        <div class="w-64 h-20 bg-slate-100 border border-dashed border-slate-300 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
+                            <img src="NewChargeSign.JPEG" alt="alternate text">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#" class="text-sm font-semibold text-slate-900 transition-colors">
+                        Home
+                    </a>
+
+                    <a href="#" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                        About
+                    </a>
+
+                    <!-- Inventory Dropdown -->
+                    <div class="relative group" id="inventory-dropdown">
+                        <button id="inventory-btn" aria-expanded="false" class="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 focus:outline-none py-2 transition-colors">
+                            <span>Inventory</span>
+                            <svg class="w-4 h-4 text-slate-400 group-hover:text-slate-700 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <div class="absolute right-0 md:left-0 mt-2 w-56 rounded-xl bg-white shadow-xl border border-slate-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-1">
+                            <div class="px-3 py-1.5 text-[10px] font-semibold tracking-wider text-slate-400 uppercase">
+                                Categories
+                            </div>
+                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Desktops
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Laptops
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Monitors
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                TVs & Displays
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Cables & Adapters
+                            </a>
+                            <a href="#" class="flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                Accessories
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="#" class="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium rounded-full transition-all shadow-sm hover:shadow">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-100 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#" class="block text-base font-semibold text-slate-900 py-1">Home</a>
+            <a href="#" class="block text-base font-medium text-slate-600 hover:text-slate-900 py-1">About</a>
+            
+            <div class="space-y-1">
+                <span class="block text-xs font-semibold tracking-wider text-slate-400 uppercase py-1">Inventory</span>
+                <div class="pl-3 space-y-1 border-l-2 border-slate-100">
+                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Desktops</a>
+                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Laptops</a>
+                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Monitors</a>
+                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">TVs & Displays</a>
+                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Cables & Adapters</a>
+                    <a href="#" class="block text-sm text-slate-600 hover:text-slate-900 py-1">Accessories</a>
+                </div>
+            </div>
+
+            <div class="pt-2">
+                <a href="#" class="block w-full text-center px-5 py-2.5 bg-slate-900 text-white font-medium rounded-lg">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="flex-grow flex items-center py-12 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Column: Description & CTAs -->
+                <div class="lg:col-span-6 space-y-8 text-left">
+                    
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-slate-100 border border-slate-200 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-slate-900"></span>
+                        <span class="text-xs font-medium text-slate-700">Next-Gen Technology Supply</span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.15]">
+                            Powering your enterprise with modern tech.
+                        </h1>
+                        <p class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl">
+                            New Charge Electronics supplies high-performance desktops, laptops, displays, and essential connectivity hardware tailored for businesses and individuals seeking reliable power.
+                        </p>
+                    </div>
+
+                    <!-- Call To Action & Details -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="#" class="px-7 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-medium text-center rounded-xl transition-all shadow-md hover:shadow-lg">
+                            Explore Catalog
+                        </a>
+                        <a href="#" class="px-7 py-3.5 bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-center border border-slate-200 rounded-xl transition-all">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <!-- Subtle Value Props -->
+                    <div class="pt-6 border-t border-slate-100 grid grid-cols-3 gap-4">
+                        <div>
+                            <div class="font-bold text-slate-900 text-lg">100%</div>
+                            <div class="text-xs text-slate-500">Quality Tested</div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-slate-900 text-lg">Fast</div>
+                            <div class="text-xs text-slate-500">Global Shipping</div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-slate-900 text-lg">24/7</div>
+                            <div class="text-xs text-slate-500">Expert Support</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Hero Image Placeholder -->
+                <div class="lg:col-span-6 flex justify-center">
+                    <div class="relative w-full max-w-xl aspect-[4/3] bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl flex flex-col items-center justify-center p-8 text-center group hover:border-slate-300 transition-colors shadow-sm">
+                        <!-- Icon Placeholder -->
+                        <div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-slate-100 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
+                            <svg class="w-8 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 002-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <!-- Placeholder Text -->
+                        <h3 class="text-slate-700 font-semibold text-base">Hero Image Placeholder</h3>
+                        <p class="text-slate-400 text-sm mt-1 max-w-xs">
+                            Recommended size: 800 x 600px.<br>Replace this block with your primary product photo.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Footer -->
+    <footer class="border-t border-slate-100 bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <p>&copy; 2026 New Charge Electronics. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-600 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-600 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-slate-600 transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS for Mobile Menu Toggle -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
