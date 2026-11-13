@@ -7,19 +7,22 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- Google Font: Orbitron -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Orbitron', 'sans-serif'],
                     },
                     colors: {
                         brand: {
                             50: '#f8fafc',
                             100: '#f1f5f9',
-                            500: '#64748b',
+                            500: '#265291',
                             900: '#0f172a',
                         }
                     }
@@ -41,8 +44,8 @@
                         <!-- Rectangular Logo Placeholder Box -->
                         <!--<div class="w-64 h-18 bg-slate-100 border border-line border-slate-300 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
                             --->
-						<div class="w-64 h-15 bg-slate-100 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
-							<img src="/docs/assets/img/NewChargeSign.jpeg" alt="alternate text" style="border-radius: 15px">
+						<div class="w-64 h-15 bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
+							<img src="/NCEsite3/docs/assets/img/NewChargeSign.jpeg" alt="alternate text" style="border-radius: 15px">
                         </div>
                     </a>
                 </div>
@@ -71,7 +74,7 @@
                         </button>
 
                         <!-- Dropdown Menu -->
-                        <div class="absolute right-0 md:left-0 mt-2 w-56 rounded-xl bg-white shadow-xl border border-slate-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-1">
+                        <div class="absolute right-0 md:left-0 mt-2 w-56 bg-white shadow-xl border border-slate-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-1">
                             <div class="px-3 py-1.5 text-[10px] font-semibold tracking-wider text-slate-400 uppercase">
                                 Categories
                             </div>
@@ -102,7 +105,7 @@
 
                 <!-- Action Button -->
                 <div class="hidden md:flex items-center gap-4">
-                    <a href="#" class="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium rounded-full transition-all shadow-sm hover:shadow">
+                    <a href="#" class="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium transition-all shadow-sm hover:shadow">
                         Contact Us
                     </a>
                 </div>
@@ -139,7 +142,7 @@
 			
 
             <div class="pt-2">
-                <a href="#" class="block w-full text-center px-5 py-2.5 bg-slate-900 text-white font-medium rounded-lg">Contact Us</a>
+                <a href="#" class="block w-full text-center px-5 py-2.5 bg-slate-900 text-white font-medium">Contact Us</a>
             </div>
         </div>
     </header>
@@ -152,20 +155,20 @@
 							<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.15]">
 								Donations
 							</h1>
-							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-900 tracking-tight leading-[1.15]">
+							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-500 tracking-tight leading-[1.15]">
 								When do we take donations:
 							<h2>
 							<ol class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl">
 								<li>Monday - Friday: 9am - 5pm</li>
 								<li>Saturday: 12 pm - 4pm</li>
 							</ol>
-							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-900 tracking-tight leading-[1.15]">
+							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-500 tracking-tight leading-[1.15]">
 								What do we take:
 							<h2>
 							<p class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl"> 
 								Nearly everyting! If it is in working condition that is ideal, however we do take items that don't work. Items that are broken beyond repair go to our recycling
 							</p>
-							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-900 tracking-tight leading-[1.15]">
+							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-500 tracking-tight leading-[1.15]">
 								What do NOT take:
 							<h2>
 							
@@ -174,40 +177,55 @@
 							<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.15]">
 								Recycling
 							</h1>
-							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-900 tracking-tight leading-[1.15]">
+							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-500 tracking-tight leading-[1.15]">
 								We will soon be an official electronics recycling location!
 							<h2>
-							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-900 tracking-tight leading-[1.15]">
+							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-500 tracking-tight leading-[1.15]">
 								When do we take recylcing:
 							<h2>
 							<ol class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl">
 								<li>Monday - Friday: 9am - 5pm</li>
 								<li>Saturday: 12 pm - 4pm</li>
 							</ol>
-							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-900 tracking-tight leading-[1.15]">
+							<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-500 tracking-tight leading-[1.15]">
 								What do we take:
-							<h2>
+							</h2>
 							<p class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl"> 
 								Just like donations we take nearly everything. For our recycling we also take items that are beyond repair
 							</p>
 						</div>
 				</div>
+				
+				<div class="lg:col-span-6 flex justify-center">
+					<div class="w-64 h-15 bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-medium">    
+						<img src="/NCEsite3/docs/assets/img/NewChargeSign.jpeg" alt="alternate text" style="border-radius: 15px"> 
+					</div>
+				</div>
 			</div>
 		</div>
-		 <!-- Right Column: Hero Image Placeholder -->
-                <div class="lg:col-span-6 flex justify-center">
-                    <div class="relative w-full max-w-xl aspect-[4/3] bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl flex flex-col items-center justify-center p-8 text-center group hover:border-slate-300 transition-colors shadow-sm">
-                        <!-- Icon Placeholder -->
-                        <div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-slate-100 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
-                            <svg class="w-8 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 002-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <!-- Placeholder Text -->
-                        <h3 class="text-slate-700 font-semibold text-base">Hero Image Placeholder</h3>
-                        <p class="text-slate-400 text-sm mt-1 max-w-xs">
-                            Recommended size: 800 x 600px.<br>Replace this block with your primary product photo.
-                        </p>
-                    </div>
-                </div>
+		 
+                
 	</main>
+	
+	<footer class="border-t border-slate-100 bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <p>&copy; 2026 New Charge Electronics. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-600 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-600 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-slate-600 transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS for Mobile Menu Toggle -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

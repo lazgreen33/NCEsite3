@@ -7,19 +7,22 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font: Orbitron -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Orbitron', 'sans-serif'],
                     },
                     colors: {
                         brand: {
                             50: '#f8fafc',
                             100: '#f1f5f9',
-                            500: '#64748b',
+                            500: '#265291',
                             900: '#0f172a',
                         }
                     }
@@ -41,8 +44,8 @@
                         <!-- Rectangular Logo Placeholder Box -->
                         <!--<div class="w-64 h-18 bg-slate-100 border border-line border-slate-300 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
                             --->
-						<div class="w-64 h-15 bg-slate-100 rounded-lg flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
-							<img src="/docs/assets/img/NewChargeSign.jpeg" alt="alternate text" style="border-radius: 15px">
+						<div class="w-64 h-15 bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-medium tracking-wide group-hover:border-slate-400 group-hover:bg-slate-100/80 transition-all">
+							<img src="/NCEsite3/docs/assets/img/NewChargeSign.jpeg" alt="alternate text" style="border-radius: 15px">
                         </div>
                     </a>
                 </div>
@@ -71,7 +74,7 @@
                         </button>
 
                         <!-- Dropdown Menu -->
-                        <div class="absolute right-0 md:left-0 mt-2 w-56 rounded-xl bg-white shadow-xl border border-slate-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-1">
+                        <div class="absolute right-0 md:left-0 mt-2 w-56  bg-white shadow-xl border border-slate-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-1">
                             <div class="px-3 py-1.5 text-[10px] font-semibold tracking-wider text-slate-400 uppercase">
                                 Categories
                             </div>
@@ -102,7 +105,7 @@
 
                 <!-- Action Button -->
                 <div class="hidden md:flex items-center gap-4">
-                    <a href="#" class="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium rounded-full transition-all shadow-sm hover:shadow">
+                    <a href="#" class="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium transition-all shadow-sm hover:shadow">
                         Contact Us
                     </a>
                 </div>
@@ -139,11 +142,76 @@
 			
 
             <div class="pt-2">
-                <a href="#" class="block w-full text-center px-5 py-2.5 bg-slate-900 text-white font-medium rounded-lg">Contact Us</a>
+                <a href="#" class="block w-full text-center px-5 py-2.5 bg-slate-900 text-white font-medium">Contact Us</a>
             </div>
         </div>
     </header>
 	
 	<main class="flex-grow flex items-center py-12 lg:py-24">
-	
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+			<div class="max-w7x1 mx-auto my-5">
+				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.15]">
+                    Bringing Affordable Renewed Electronics to Our Communities
+                </h1>
+			</div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Column: Description & CTAs -->
+                <div class="lg:col-span-6 space-y-8 text-left">
+
+                    <div class="space-y-4">
+                        
+						<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-500 tracking-tight leading-[1.15]">
+							Affordable
+						</h2>
+                        <p class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl">
+                            New Charge Electronics refurbishes desktops, laptops, monitors, and more to help bring affordable electronics to our community. 
+                        </p>
+						<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-500 tracking-tight leading-[1.15]">
+							Refurbished
+						</h2>
+						<p class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl">
+							We take old electronics that are going to be thrown out and give them a new life
+						</p>
+						<h2 class="text-4xl sm:text-5xl lg:text-4xl text-slate-500 tracking-tight leading-[1.15]">
+							Recycled
+						</h2>
+						<p class="text-lg text-slate-600 font-normal leading-relaxed max-w-xl">
+							We thrive off of donations and partnerships with local recycling and transfer centers to keep electronics from becoming waste
+						</p>
+                    </div>
+
+                </div>
+
+                <div class="lg:col-span-6 flex justify-center">
+					<div class="w-64 h-15 bg-slate-100 flex items-center justify-center text-xs text-slate-400 font-medium">    
+						<img src="/NCEsite3/docs/assets/img/NewChargeSign.jpeg" alt="alternate text" style="border-radius: 15px"> 
+					</div>
+				</div>
+
+            </div>
+        </div>
 	</main>
+	
+	<footer class="border-t border-slate-100 bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <p>&copy; 2026 New Charge Electronics. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-600 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-600 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-slate-600 transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS for Mobile Menu Toggle -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
